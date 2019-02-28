@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @mslane.Title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @mslane.Category %>
+</p>
+
+<p>
+  <strong>Release:</strong>
+  <%= @mslane.Release %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @mslane.Cost %>
+</p>
+
+<%= link_to 'Edit', edit_mslane_path(@mslane) %> |
+<%= link_to 'Back', mslanes_path %>

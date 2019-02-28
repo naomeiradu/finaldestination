@@ -1,0 +1,37 @@
+<%= form_with(model: mslane, local: true) do |form| %>
+  <% if mslane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mslane.errors.count, "error") %> prohibited this mslane from being saved:</h2>
+
+      <ul>
+      <% mslane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Title %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Category %>
+    <%= form.text_field :Category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Release %>
+    <%= form.number_field :Release %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Cost %>
+    <%= form.number_field :Cost %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

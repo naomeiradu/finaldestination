@@ -1,0 +1,2 @@
+class Mslane < ApplicationRecord
+end

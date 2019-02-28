@@ -1,0 +1,2 @@
+class Mislane < ApplicationRecord
+end
